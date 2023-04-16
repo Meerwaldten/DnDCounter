@@ -160,7 +160,45 @@ function updateDisplay7(){
     counterDisplayElem7.innerHTML = count7;
 };
 
+let counterDisplayElem8 = document.querySelector('.counter-display8');
+let counterMinusElem8 = document.querySelector('.counter-minus8');
+let counterPlusElem8 = document.querySelector('.counter-plus8');
 
+let count8 = 0;
+
+
+updateDisplay8();
+counterPlusElem8.addEventListener("click",()=>{
+    count8++;
+    updateDisplay8();
+}) ;
+counterMinusElem8.addEventListener("click",()=>{
+    count8--;
+    updateDisplay8();
+});
+function updateDisplay8(){
+    counterDisplayElem8.innerHTML = count8;
+};
+
+let counterDisplayElem9 = document.querySelector('.counter-display9');
+let counterMinusElem9 = document.querySelector('.counter-minus9');
+let counterPlusElem9 = document.querySelector('.counter-plus9');
+
+let count9 = 0;
+
+
+updateDisplay9();
+counterPlusElem9.addEventListener("click",()=>{
+    count9++;
+    updateDisplay9();
+}) ;
+counterMinusElem9.addEventListener("click",()=>{
+    count9--;
+    updateDisplay9();
+});
+function updateDisplay9(){
+    counterDisplayElem9.innerHTML = count9;
+};
 
 
 
