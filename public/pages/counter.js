@@ -2,16 +2,36 @@ let counterDisplayElem = document.querySelector('.counter-display');
 let counterMinusElem = document.querySelector('.counter-minus');
 let counterPlusElem = document.querySelector('.counter-plus');
 
+let total20Elem = document.querySelector('.total20s');
+let total1Elem = document.querySelector('.total1s');
+
 let count = 0;
+let total20s = 0;
+let total1s = 0;
+
+update20s();
+function update20s(){
+    total20Elem.innerHTML = total20s;
+};
+
+update1s();
+function update1s(){
+    total1Elem.innerHTML = total1s;
+};
+
 
 
 updateDisplay();
 counterPlusElem.addEventListener("click",()=>{
     count++;
+    total20s++;
+    update20s();
     updateDisplay();
-}) ;
+});
 counterMinusElem.addEventListener("click",()=>{
     count--;
+    total20s--;
+    update20s();
     updateDisplay();
 });
 function updateDisplay(){
@@ -29,10 +49,14 @@ let count1 = 0;
 updateDisplay1();
 counterPlusElem1.addEventListener("click",()=>{
     count1++;
+    total1s++;
+    update1s();
     updateDisplay1();
 }) ;
 counterMinusElem1.addEventListener("click",()=>{
     count1--;
+    total1s--;
+    update1s();
     updateDisplay1();
 });
 function updateDisplay1(){
@@ -49,10 +73,14 @@ let count2 = 0;
 updateDisplay2();
 counterPlusElem2.addEventListener("click",()=>{
     count2++;
+    total20s++;
+    update20s();
     updateDisplay2();
 }) ;
 counterMinusElem2.addEventListener("click",()=>{
     count2--;
+    total20s--;
+    update20s();
     updateDisplay2();
 });
 function updateDisplay2(){
@@ -69,10 +97,14 @@ let count3 = 0;
 updateDisplay3();
 counterPlusElem3.addEventListener("click",()=>{
     count3++;
+    total20s++;
+    update20s();
     updateDisplay3();
 }) ;
 counterMinusElem3.addEventListener("click",()=>{
     count3--;
+    total20s--;
+    update20s();
     updateDisplay3();
 });
 function updateDisplay3(){
@@ -89,10 +121,14 @@ let count4 = 0;
 updateDisplay4();
 counterPlusElem4.addEventListener("click",()=>{
     count4++;
+    total1s++;
+    update1s();
     updateDisplay4();
 }) ;
 counterMinusElem4.addEventListener("click",()=>{
     count4--;
+    total1s--;
+    update1s();
     updateDisplay4();
 });
 function updateDisplay4(){
@@ -110,10 +146,14 @@ let count5 = 0;
 updateDisplay5();
 counterPlusElem5.addEventListener("click",()=>{
     count5++;
+    total1s++;
+    update1s();
     updateDisplay5();
 }) ;
 counterMinusElem5.addEventListener("click",()=>{
     count5--;
+    total1s--;
+    update1s();
     updateDisplay5();
 });
 function updateDisplay5(){
@@ -130,10 +170,14 @@ let count6 = 0;
 updateDisplay6();
 counterPlusElem6.addEventListener("click",()=>{
     count6++;
+    total1s++;
+    update1s();
     updateDisplay6();
 }) ;
 counterMinusElem6.addEventListener("click",()=>{
     count6--;
+    total1s--;
+    update1s();
     updateDisplay6();
 });
 function updateDisplay6(){
@@ -150,10 +194,14 @@ let count7 = 0;
 updateDisplay7();
 counterPlusElem7.addEventListener("click",()=>{
     count7++;
+    total20s++;
+    update20s();
     updateDisplay7();
 }) ;
 counterMinusElem7.addEventListener("click",()=>{
     count7--;
+    total20s--;
+    update20s();
     updateDisplay7();
 });
 function updateDisplay7(){
@@ -170,10 +218,14 @@ let count8 = 0;
 updateDisplay8();
 counterPlusElem8.addEventListener("click",()=>{
     count8++;
+    total20s++;
+    update20s();
     updateDisplay8();
 }) ;
 counterMinusElem8.addEventListener("click",()=>{
     count8--;
+    total20s--;
+    update20s();
     updateDisplay8();
 });
 function updateDisplay8(){
@@ -190,10 +242,14 @@ let count9 = 0;
 updateDisplay9();
 counterPlusElem9.addEventListener("click",()=>{
     count9++;
+    total1s++;
+    update1s();
     updateDisplay9();
 }) ;
 counterMinusElem9.addEventListener("click",()=>{
     count9--;
+    total1s--;
+    update1s();
     updateDisplay9();
 });
 function updateDisplay9(){
